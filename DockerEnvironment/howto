@@ -1,0 +1,12 @@
+https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
+
+docker-compose up airflow-init
+docker-compose up
+
+//FATAL: role not found
+might have to do
+docker-compose down 
+docker-compose up --force-recreate
+
+//Error starting userland proxy: listen tcp4 0.0.0.0:5432: bind: address already in use
+https://stackoverflow.com/questions/38249434/docker-postgres-failed-to-bind-tcp-0-0-0-05432-address-already-in-use
